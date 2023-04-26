@@ -16,6 +16,7 @@ h1{
     font-weight: 700;
     letter-spacing: 0.1rem;
     font-size: 1.6rem;
+    text-align: center;
     color: #0E0B0A;
     
 }
@@ -240,6 +241,10 @@ background: #0084ff;
     border-radius: 0.2rem;
 }
 
+#QuemSomos h1{
+    text-align: left;
+}
+
 #QuemSomos .NomeAdvogado{
     position: relative;
     display: flex;
@@ -317,12 +322,12 @@ background: #0084ff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 480px;
-    min-height: 150px;
+    width: 35vw;
+    min-height: 15vh;
     background-color: #fff;
-    padding: 20px 25px;
+    padding: 3.5vh 4vh;
     border-radius: 1.5rem;
-    margin: 60px 60px 0px 0px;
+    margin: 10vh 10vw 0px 0px;
 }
 
 .Dep .Header{
@@ -452,7 +457,7 @@ background: #0084ff;
     margin-bottom: 1vh;
 }
 
-#FaleConosco a{
+#FaleConosco input[type="submit"]{
     position: relative;
     margin-top: 4vh;
     display: flex;
@@ -678,6 +683,7 @@ footer h2{
     .soci #twitter{
         margin-bottom: -0.05vh;
         
+        
     }
 
     .Twitter{
@@ -727,8 +733,21 @@ footer h2{
    
 
     /*Home*/
+    #Home{
+        background-image: url(src/Background.png);
+        justify-content: center; 
+        background-repeat: no-repeat;
+        align-items: center; 
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        background-size:cover;
+        background-position: center
+    }
+
     #Home .subtitle{
-        width: 50vw;
+        width: 80vw;
         padding: 6vh 0;
     }
 
@@ -739,42 +758,54 @@ footer h2{
 
     #QuemSomos .Texto{
         margin-top: .5vh;
-        padding-right: 6vw;
-        padding-left: 6vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
 
     #QuemSomos img{
-        width: 70vw;
+        width: 80vw;
         border-radius: 0.2rem;
     }
     
-    #QuemSomos .NomeAdvogado{
-        right: -38vh;
-        bottom: 13vh;
-        width: 33vw;
+    #QuemSomos .ConteinerSobre{
         display: flex;
-        padding: .6vw 1.5vw 1.5vw 1.5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #QuemSomos .NomeAdvogado{
+        right: auto;
+        bottom: 6.3vh;
+        width: fit-content;
+        display: flex;
+        padding: .6vw 5vw 1.5vw 1.5vw;
     }
 
     /*Depoimentos*/
+
+    .Dep{
+        width: 80vw;
+
+    }
 
     .ConteinerDep{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 0px;
+        margin: 40px;
     }
 
     .Cont1{
-        margin-left: 0px;
+        margin-left: 0p;
     }
 
     .Cont2{
-        margin-right: 0px;
+        margin-right: 0p;
     }
 
     .Musk{
-        margin-top: 4vh;
+        margin-top: 0vh;
     }
 
     .Dep{
@@ -787,12 +818,16 @@ footer h2{
         flex-direction: column;
     }
 
+    #Servicos .ConteinerServ img {
+        width: 80vw;
+    }
+
     #Servicos .DescricaoServ {
         display: flex;
         flex-direction: column;
-        width: 50vh;
+        width: 70vw;
         position: relative;
-        bottom: 14.5vh;
+        bottom: 8vh;
         align-items: center;
         justify-content: center;
         border-radius: 0.2rem;
@@ -800,6 +835,8 @@ footer h2{
     
     #Servicos .ConteinerDesc{
         padding: 4.3vh 3vw;
+        width: 70vw;
+        min-height: auto;
         margin-top: -3.4vh;
         background: #ffffff;
         border-bottom: #EAB600 solid 2vh;
@@ -879,7 +916,7 @@ footer h2{
     }
 
     footer .LogoMed{
-        width: 45vh;
+        width: 60vw;
     }
     
     .EmailFooter, .FoneFooter{

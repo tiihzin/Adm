@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="src/Favicon.png" type="image/x-icon" />
     <title>ADM Advogado</title>
   </head>
   
@@ -64,7 +65,7 @@
           tecnológicas para atender seus clientes com máxima
           eficiência e atendimento humanizado.
       </div>
-      <div>
+      <div class="ConteinerSobre">
         <img id="Advogado" src="src/Advogado.png" alt="" />
         <div class="NomeAdvogado">
           <h3 class="titulo">Dr. Pedro T. Chagas</h3>
@@ -223,7 +224,7 @@
             <h5>Nome Completo</h5>
             <div class="ContInput">
               <img src="src/NomeForm.svg" alt="">
-              <input type="text" id="INome" placeholder="Digite seu Nome">
+              <input type="text" id="INome" required placeholder="Digite seu Nome">
             </div>
           </div>
 
@@ -231,7 +232,7 @@
             <h5>Email</h5>
             <div class="ContInput">
               <img src="src/EmailForm.svg" alt="">
-              <input type="email" id="IEmail" placeholder="Digite seu Email">
+              <input type="email" id="IEmail" required placeholder="Digite seu Email">
             </div>
           </div>
         </div>
@@ -241,12 +242,12 @@
             <h5>Cpf</h5>
             <div class="ContInput">
               <img src="src/NomeForm.svg" alt="" style="left: 35px;">
-              <input type="text" id="ICpf" placeholder="Digite seu CPF">
+              <input type="text" id="ICpf" required placeholder="Digite seu CPF">
             </div>
           </div>
 
           <div class="checkbox">
-              <input type="checkbox" checked id="chk1" class="checkbox">
+              <input type="checkbox" checked required id="chk1" class="checkbox">
               <label for="chk1">
                 Sou uma Pessoa Física
               </label>
@@ -261,10 +262,7 @@
           <h5>Descrição</h5>
           <textarea placeholder="Escreva aqui a descrição..."></textarea>
           </div>
-          <a href="#" class="btx">
-            ENVIAR AGORA
-            <img src="src/SetaBotao.svg" alt="" />
-          </a>
+          <input type="submit" href="#" value="ENVIAR AGORA" class="btx">
         </div>
       </form>
     </section>
