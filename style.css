@@ -834,9 +834,11 @@ footer h2{
     }
     
     #Servicos .ConteinerDesc{
-        padding: 4.3vh 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 70vw;
-        min-height: 13vh;
+        height: 13vh;
         margin-top: -3.4vh;
         background: #ffffff;
         border-bottom: #EAB600 solid 2vh;
