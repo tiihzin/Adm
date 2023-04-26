@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    font-family:  'Montserrat', sans-serif;
+    transition: all 100ms ease-in-out;
+}
+
+
+h1{
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    color: #0E0B0A;
+    
+}
+
+h2{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #EAB600;
+    line-height: 2rem;
+}
+
+h6{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+h4{
+    font-weight: 500;
+    font-size: .7rem;
+    color: #ffffff;
+    
+    }
+
+p{
+    line-height: 1.5rem;
+    font-size: 1.05rem;
+    color: #333231;
+    letter-spacing: .03rem;
+    text-align: justify;
+
+}
+
+h5{
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    color: #333231;
+    font-weight: 700;
+    letter-spacing: .03rem;
+}
+
+section{
+    padding: 10vh 5vw 10vh 5vw; 
+}
+
+a{
+    cursor: pointer;
+}
+
+.btx{
+    background-color: #EAB600;
+    padding: .8rem 1.3rem;
+    display: flex;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    align-items: center;
+    color: #0E0B0A;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.btx img{
+    margin-left: 2vw;
+    max-width: 7%;
+}
+
+.btx:hover{
+    background-color: #be9500;
+    
+}
+
+.linha{
+    width: 6.5vw;
+    margin: 1vw 0 2.5vw 0;
+    height: 0.4vw;
+    background-color: #EAB600;
+}
+
+
+/*header*/
+
+header{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100vw;
+    padding: 4vh 5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.HidemDescktop{
+    display: none;
+}
+
+.logo{
+    width: 12vw;
+}
+
+.direita{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    margin-right: 0.8rem;
+}
+
+nav a{
+    color: #1e1e1e;
+    margin-right: 1.5vw;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: #EAB600;
+}
+
+.soci{
+    background-color: #0E0B0A;
+    width: 2.4vw;
+    height: 2.4vw;
+    border-radius: 50%;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    display: flex;
+    margin-right: 2vh;
+    
+}
+
+.HidemDescktop{
+    display: none;
+}
+
+.soci img{
+    width: 1.2vw;
+}
+
+.soci #twitter{
+    margin-bottom: 0.05vw;
+}
+
+.soci #facebook{
+    margin-bottom: -0.6vw;
+    width: 1vw;
+    
+}
+
+.soci #instagram{
+    margin-bottom: -0.04vw;
+    
+}
+
+.Twitter:hover{
+background: #0084ff;
+}
+
+.Facebook:hover{
+    background: #0022e2;
+}
+
+.Instagram:hover{
+    background: #ff1971;
+}
+
+/*Home*/
+
+#Home{
+    background-image: url(src/Background.png);
+    justify-content: center; /*Alinha os itens no centro HORIZONTALMENTE*/
+    background-repeat: no-repeat; /*Faz com que a imagem do Bg não se repita em grandes resoluções*/
+    align-items: center; /*Alinha os itens Verticalmente*/
+    display: flex; /*Display flexivel (O justify-content, o align-items e o flex-direction são especificos dele )*/
+    flex-direction: column; /*Determina como vao ser mostrados os itens em um display flex (Linhas ou Colunas)*/
+    height: 100vh; /*Altura da div #Home (NO CASO O 100VH SIGNIFICA QUE ELA VAI OCUPAR 100% DA TELA VH = ViewPort Heigth*/
+    width: 100%;
+    background-size: contain;
+    
+}
+
+#Home .logo{
+    width: 22vw;
+    margin-top: 3vh;
+}
+
+#Home .subtitle{
+    width: 35vw;
+    padding: 6vh 0;
+}
+
+/*Quem Somos*/
+
+#QuemSomos{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#QuemSomos img{
+    width: 40vw;
+    border-radius: 0.2rem;
+}
+
+#QuemSomos .NomeAdvogado{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    right: -25vw;
+    bottom: 15vh;
+    display: flex;
+    background-color: #0E0B0A;
+    padding: .6vw 1.5vw 1vw 1vw;
+}
+
+#QuemSomos .Texto{
+    margin-top: -6.5vh;
+    padding-right: 5vw;
+}
+
+#QuemSomos p{
+    text-align: justify;
+    
+}
+
+/*Depoimentos*/
+
+#Depoimentos{
+    background-image: url(src/BackgroundDep.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Depoimentos .linha{
+    margin: 0px 0 1.5vw 0;
+}
+
+#Depoimentos h1{
+    color: #fff;
+}
+
+#Depoimentos h2{
+    color: #EAB600;
+    margin-top: 0.5vw;
+}
+
+#Depoimentos b{
+    color: #EAB600;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#Depoimentos h6{
+    margin-top: 4vw;
+
+}
+
+.ConteinerDep{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.Cont1{
+    margin-left: 205px;
+}
+
+.Cont2{
+    margin-right: 85px;
+}
+
+.Musk{
+    margin-top: 40px;
+}
+
+.Dep{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 480px;
+    min-height: 150px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 1.5rem;
+    margin: 60px 60px 0px 0px;
+}
+
+.Dep .Header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.ProfStar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.TextP{
+    margin-top: 20px;
+}
+
+/*Serviços*/
+
+#Servicos{
+    padding: 60px 60px 0px 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Servicos .Serv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Servicos h2{
+    color: #EAB600;
+    margin-top: 10px;
+}
+
+#Servicos h5{
+    text-align: center;
+}
+
+#Servicos .ConteinerServ{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Servicos .ConteinerServ:hover .ConteinerDesc{
+    background:#EAB600;
+    cursor: pointer;
+}
+
+#Servicos .ConteinerServ:hover h5{
+    cursor: pointer;
+    color:#ffffff;
+}
+
+#Servicos .ConteinerServ:hover img{
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+
+#Servicos .ConteinerServ img{
+    width: 60vh;
+}
+
+#Servicos .DescricaoServ {
+    display: flex;
+    flex-direction: column;
+    width: 54vh;
+    position: relative;
+    bottom: 14.5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+#Servicos .ConteinerDesc{
+    padding: 4.3vh 3vw;
+    margin-top: -3.4vh;
+    background: #ffffff;
+    border-bottom: #EAB600 solid 2vh;
+}
+
+
+/*Fale Conosco*/
+
+#FaleConosco {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    flex-direction: column;
+}
+
+#FaleConosco h2{
+    color: #EAB600;
+    margin-top: 2vh;
+}
+
+#FaleConosco form {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#FaleConosco input[type="text"], input[type="email"], input[type="number"] {
+    background: #E2E2E2;
+    padding: 3vh 3vh;
+    padding-left: 8vh;
+    color: #6F6F6F;
+    font-weight: 600;
+    width: 25vw;
+    font-size: .8rem;
+    border-radius: 0.2rem;
+}
+
+#FaleConosco h5{
+    margin-left: 3vh;
+    margin-bottom: 1vh;
+}
+
+#FaleConosco a{
+    position: relative;
+    margin-top: 4vh;
+    display: flex;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4vh;
+    margin-top: 6vh;
+    border-radius: 0.2rem;
+}
+
+.checkbox input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    border-radius: 0.2rem;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 4vh;
+    display: inline-block;
+    color: #6F6F6F;
+    font-weight: 600;
+    font-size: .8rem;
+    
+}
+  
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+    background: #DDD;
+    margin-right: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.checkbox label::after {
+    content: "\2713";
+    position: absolute;
+    top: 45%;
+    left: .6em;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.checkbox label:focus::before, .checkbox label:hover::before {
+    background: #adadad;
+}
+
+.checkbox input:checked + label::before {
+    background: #EAB600;
+    
+}
+
+.checkbox input:checked + label::after {
+    opacity: 1;
+}
+
+.NomeEmail img, .CpfPessoa img{
+    left: 5.5vh;
+    position: relative;
+}
+
+.NomeEmail, .CpfPessoa{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    align-items: center;
+}
+
+.ContInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0px;
+}
+
+
+.Descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 4vh;
+    
+}
+
+
+textarea{
+    margin-left: 1.5vh;
+    width: 52vw;
+    height: 30vh;
+    background: #E2E2E2;
+    padding: 2vh 2.5vh;
+    color: #6F6F6F;
+    font-weight: 600;
+    font-size: .8rem;
+    resize: none;
+    border-radius: 0.2rem;
+}
+
+/*Footer*/
+footer{
+    margin-top: 5vh;
+    border-top: #EAB600 solid 1.5vh;
+    display: flex;
+    flex-direction: column;
+    background: #0E0B0A;
+    padding: 10vh 5vw 10vh 5vw; 
+}
+
+.ConteinerFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .LogoMed{
+    width: 45vh;
+}
+
+.EmailFooter, .FoneFooter{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    
+}
+
+
+footer h5{
+    margin-left: 1vh;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #EAB600;
+}
+
+
+footer h2{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: left;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.Copywriter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10vh;
+    margin-bottom: -3vh;
+    color: #3f3f3f;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+
+}
+
+/*RESPONSIVIDADE*/
+
+@media(max-width: 700px) {
+    /*Header*/
+
+    header{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        width: 100vw;
+        padding: 4vh 5vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    header img{
+        margin-bottom: 1rem;
+    }
+
+    .soci{
+        width: 4vh;
+        height: 4vh;
+        border-radius: 50%;
+        margin-left: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social{
+        display: flex;
+        margin-top: 4vh;
+        margin-right: 0;
+        
+    }
+    
+    .HidemDescktop{
+        display: none;
+    }
+    
+    .soci img{
+        width: 2vh;
+    }
+    
+    .soci #twitter{
+        margin-bottom: -0.05vh;
+        
+    }
+
+    .Twitter{
+        background: #0084ff;
+        margin-left: 0vh;
+    }
+        
+    .Facebook{
+        background: #0022e2;
+    }
+        
+    .Instagram{
+        background: #ff1971;
+    }
+    
+    .Twitter:hover{
+        background: #094e8f;
+        margin-left: 0vh;
+    }
+        
+    .Facebook:hover{
+        background: #061a8d;
+    }
+        
+    .Instagram:hover{
+        background: #a8134c;
+    }
+    
+    .soci #facebook{
+        margin-bottom: -1.1vh;
+        width: 1.6vh;
+    }
+    
+    .soci #instagram{
+        margin-bottom: -0.04vh;
+        
+    }
+
+    .HidemDescktop {
+        display: flex;
+        
+    }
+
+    .HidemPocket {
+        display: none ;
+    }
+   
+
+    /*Home*/
+    #Home .subtitle{
+        width: 50vw;
+        padding: 6vh 0;
+    }
+
+    /*Quem Somos*/
+    #QuemSomos{
+        flex-direction: column-reverse;
+    }
+
+    #QuemSomos .Texto{
+        margin-top: .5vh;
+        padding-right: 6vw;
+        padding-left: 6vw;
+    }
+
+    #QuemSomos img{
+        width: 70vw;
+        border-radius: 0.2rem;
+    }
+    
+    #QuemSomos .NomeAdvogado{
+        right: -38vh;
+        bottom: 13vh;
+        width: 33vw;
+        display: flex;
+        padding: .6vw 1.5vw 1.5vw 1.5vw;
+    }
+
+    /*Depoimentos*/
+
+    .ConteinerDep{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .Cont1{
+        margin-left: 0px;
+    }
+
+    .Cont2{
+        margin-right: 0px;
+    }
+
+    .Musk{
+        margin-top: 4vh;
+    }
+
+    .Dep{
+        margin-right: 0px;
+    }
+    
+
+    /*Serviços*/
+    #Servicos .Serv{
+        flex-direction: column;
+    }
+
+    #Servicos .DescricaoServ {
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+        position: relative;
+        bottom: 14.5vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.2rem;
+    }
+    
+    #Servicos .ConteinerDesc{
+        padding: 4.3vh 3vw;
+        margin-top: -3.4vh;
+        background: #ffffff;
+        border-bottom: #EAB600 solid 2vh;
+    }
+    
+
+    /*Fale Conosco*/
+
+    #FaleConosco form {
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .NomeEmail, .CpfPessoa{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vh;
+        align-items: center;
+    }
+
+    .Email{
+        margin-top: 4vh;
+    }
+
+    #FaleConosco input[type="text"], input[type="email"], input[type="number"] {
+        background: #E2E2E2;
+        padding: 3vh 3vh;
+        padding-left: 8vh;
+        color: #6F6F6F;
+        font-weight: 600;
+        width: 70vw;
+        font-size: 0.8rem;
+        border-radius: 0.2rem;
+    }
+    
+
+    textarea{
+        margin-left: 1.5vw;
+        width: 70vw;
+        height: 30vh;
+        background: #E2E2E2;
+        padding: 2vh 2.5vh;
+        color: #6F6F6F;
+        font-weight: 600;
+        font-size: 0.8rem;
+        resize: none;
+        border-radius: 0.2rem;
+    }
+
+    #FaleConosco a{
+        position: relative;
+        right: 0px;
+        margin-top: 4vh;
+    }
+
+    /*Footer*/
+    footer{
+        margin-top: 5vh;
+        border-top: #EAB600 solid 1.5vh;
+        display: flex;
+        flex-direction: column;
+        background: #0E0B0A;
+        padding: 10vh 5vw 10vh 5vw; 
+    }
+    
+    .ConteinerFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    
+    .FooterDireita{
+        margin-top: 6vh;
+    }
+
+    footer .LogoMed{
+        width: 45vh;
+    }
+    
+    .EmailFooter, .FoneFooter{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vh;
+        
+    }
+}
