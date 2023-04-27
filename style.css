@@ -307,16 +307,15 @@ background: #0084ff;
 }
 
 .Cont1{
-    margin-left: 205px;
+    margin-right: -10vh;
 }
 
 .Cont2{
-    margin-right: 85px;
+    margin-left: -10vh;
 }
 
-.Musk{
-    margin-top: 40px;
-}
+
+
 
 .Dep{
     display: flex;
@@ -327,7 +326,15 @@ background: #0084ff;
     background-color: #fff;
     padding: 3.5vh 4vh;
     border-radius: 1.5rem;
-    margin: 10vh 10vw 0px 0px;
+    margin: 10vh 5vw 0px 0px;
+}
+
+.Musk{
+    margin-top: 40px;
+}
+
+.Charques {
+    margin-right: 0px;
 }
 
 .Dep .Header{
