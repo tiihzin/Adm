@@ -11,6 +11,11 @@
     transition: all 100ms ease-in-out;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+}
+
 
 h1{
     font-weight: 700;
@@ -213,7 +218,7 @@ background: #0084ff;
     flex-direction: column; /*Determina como vao ser mostrados os itens em um display flex (Linhas ou Colunas)*/
     height: 100vh; /*Altura da div #Home (NO CASO O 100VH SIGNIFICA QUE ELA VAI OCUPAR 100% DA TELA VH = ViewPort Heigth*/
     width: 100%;
-    background-size: contain;
+    background-size:cover;
     
 }
 
